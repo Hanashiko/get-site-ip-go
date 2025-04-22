@@ -8,7 +8,7 @@ import (
 
 func main() {
 	var msg dns.Msg
-	fqdn := dns.Fqdn("honey-manga.com.ua")
+	fqdn := dns.Fqdn("example.com")
 
 	msg.SetQuestion(fqdn, dns.TypeA)
 	in, err := dns.Exchange(&msg, "8.8.8.8:53")
